@@ -12,7 +12,12 @@ $(document).ready(function() {
         $(this).next('.accordion-content').slideDown();
     });
 
-    $('#about-block').click(function() {
-        $('#modal')
-    });
-})
+    $('.open-modal-btn').click(function() {
+        var targetModal = $(this).data("target");
+        $(targetModal).show();
+    })
+
+    $('.close-btn').click(function() {
+        $(this).closest('.modal').hide();
+    })
+});

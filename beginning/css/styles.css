@@ -264,6 +264,9 @@ body.home {
 .careers-container {
     margin-bottom: 50px;
 }
+.about button {
+    border: 0px;
+}
 /**Community Page**/
 .community {
     display: grid;
