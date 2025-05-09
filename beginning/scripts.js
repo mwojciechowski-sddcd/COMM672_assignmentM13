@@ -5,9 +5,14 @@ $(document).ready(function() {
         } else {
             $('#topBtn').fadeOut();
         }
-    })
+    });
+
+    $('.accordion-header').click(function() {
+        $('.accordion-content').slideUp();
+        $(this).next('.accordion-content').slideDown();
+    });
 
     $('#about-block').click(function() {
         $('#modal')
-    })
+    });
 })
